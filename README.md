@@ -39,12 +39,12 @@ This ASUS Mother Board has been build in 2019.
 | Storage NVMe       | Western Digital Black SN850X 1 TB            |
 | Mouse              | Apple Magic Mouse 2                          |
 | Audio              | RealTek ALC3235 24-bits                      |
-| WLAN               |                                              |
-| Bluetooth          | Intel® Tri-Band Wireless-AC 18260 + BT 4.0   |
+| WiFi               | TP-Link model Archer T9E AC1900 802.11ac     |
+| Bluetooth          | IOGear GBU 521 W6 BT 4.0 USB (BCM20702A0)    |
 | LAN                | Ethernet 10/100/1000 Mb/s (RJ-45)            |
 | Camera             | Logitech Webcam C920 HD Pro                  |
-| USB 3.1            | USB 3.0 x 2 ports, 1 PowerShare port         |
-| Keyboard           | Backlit Keyboard                             |
+| USB 3.1            | USB 3.1 x 4 ports, 1 PowerShare port         |
+| Keyboard           | Logitech MX Keys with backlit                |
 
 To get more:
 
@@ -60,20 +60,16 @@ To get more:
 <summary><strong>What's working</strong></summary>
 </br>
 
-- [x] Intel HD 520 Graphics `incuding graphics acceleration`.
+- [x] Graphics `incuding graphics acceleration`.
 - [x] All USB ports.
-- [x] Internal camera.
-- [x] WiFi using [AirportItlwm](https://github.com/OpenIntelWireless/itlwm).
-- [x] Bluetooth using [IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware) (without IntelBluetoothInjector.kext), with BlueToolFixup.kext from: [BrcmPatchRAM](https://github.com/acidanthera/BrcmPatchRAM) and BlueToothFixup.kext from the same source.
+- [x] Camera.
+- [x] WiFi.
+- [x] Bluetooth.
 - [x] Shutdown/ Reboot/ Sleep/ Wake.
 - [x] Speakers and headphones jack.
-- [x] Intel Gigabit Ethernet.
+- [x] Gigabit Ethernet.
 - [x] iMessage, FaceTime, App Store.
-- [x] miniDP and HDMI with digital audio passthrough (if you experience cursor lags, try turning on and off one of the displays).
-- [x] Keyboard and Trackpad(two finger vertical swipes).
-- [x] DRM (Works with Google Chrome. Tested with Prime Video and Netflix).
-- [x] Multitouch gestures for ALPS touchpad.
-- [x] SD Card Reader using [RealtekCardReader.kext](https://github.com/0xFireWolf/RealtekCardReader) with [RealtekCardReaderFriend.kext](https://github.com/0xFireWolf/RealtekCardReaderFriend).
+- [x] Keyboard.
 
 </details>
 
@@ -93,3 +89,66 @@ Up to date on September 26th, 2023.
 
 ## Installation
 
+<details>
+<summary><strong>Create the USB</strong></summary>
+</br>
+
+Follow the [guide on the OpenCore documentation](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/) to create a USB for installation. Choose the operating system you use to create the USB and proceed with the guide. At the end of the Create USB section, OpenCore will ask us to do additional configurations. We don't need to do any of that because the `EFI` folder in this repository provides all necessary configurations we need for installation on Dell Latitude E7470.
+</details>
+
+<details>
+<summary><strong>Boot and Install macOS</strong></summary>
+</br>
+
+- Plug in the USB we created to your Dell computer
+- Press the Power button to turn on our computer (if you used the Dell to create the USB, shutdown the computer first)
+- Wait and we will see the Apple icon on a black screen with a progress bar at the bottom
+- Then, we will see a menu with four options. Make sure select `Disk Utility` to partition your disk appropriately and format the partition for installing macOS into `APFS`. If you are dual booting with other operating systems, an easier way would be to partition the drive beforehand as some formats like NTFS are readonly on macOS.
+- Follow the installation steps and configure the preferences to your liking
+- Log in to macOS and enjoy
+
+</details>
+
+## Post Installation
+
+<details>
+<summary><strong>Booting without USB</strong></summary>
+</br>
+
+You need to plug in the installation USB created previously everytime you start macOS after shutdown. If you want to boot without the USB, follow [this guide by OpenCore](https://dortania.github.io/OpenCore-Post-Install/universal/oc2hdd.html#grabbing-opencore-off-the-usb).
+
+</details>
+
+<details>
+<summary><strong>Update Instructions</strong></summary>
+</br>
+
+- To update from an older version of EFI to the current one, download this repository and replace your EFI folder with this one. Make sure you use your own SMBIOS, the included one is only for reference.
+
+- After update, you can check your current OpenCore version by typing the following line in the Terminal:
+```
+nvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:opencore-version
+```
+You may see a line printed as follows:
+```
+4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:opencore-version   REL-093-2023-06-12
+```
+where `REL` means a RELEASE version of OC, `093` means version 0.7.4, and `2023-06-12` is the date of the release.
+
+</details>
+
+<details>
+<summary><strong>Fixing iServices</strong></summary>
+</br>
+
+- In order to get Apple Services like App Store working, you need to generate your own SMBIOS(The included one is only for reference).
+
+- For more information on how to do that, visit the [Dortania Guide](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#generate-a-new-serial).
+
+</details>
+
+## Credits
+
+- [Acidanthera](https://github.com/acidanthera) for OpenCore, Lilu and related kexts.
+- [Dortania](https://dortania.github.io) for installation and other guides.
+- Everyone else who contributed to this repository directly/indirectly.
