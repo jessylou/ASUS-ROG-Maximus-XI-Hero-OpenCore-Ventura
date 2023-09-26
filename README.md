@@ -26,30 +26,32 @@
   
 This ASUS Mother Board has been build in 2019.
 
-| Model              | ASUS ROG Maximus XI Hero Hackintosh        |
-|:-------------------|:-------------------------------------------|
-| Processor          | Intel Core i5-6300U @ 2.40GHz 3MB L3 cache |
-| Processor Family   | Skylake - 6th generetion - 14 nm - Q3'15   |
-| Graphics           | Integrated Intel HD Graphics 520 32 MB     |
-| Memory             | 16GB 2133MHz DDR4 SDRAM (Dual channel)     |
-| Display            | 14" FHD (1920x1000) - Non-Touch LCD        |
-| Storage            | 512GB M.2 SATA SSD                         |
-| Audio              | RealTek ALC3235 24-bits                    |
-| WLAN + Bluetooth   | Intel® Tri-Band Wireless-AC 18260 + BT 4.0 |
-| LAN                | Ethernet 10/100/1000 Mb/s (RJ-45)          |
-| Camera             | 1280x720 FHD Webcam                        |
-| Fingerprint Reader | Yes                                        |
-| USB 3.0            | USB 3.0 x 2 ports, 1 PowerShare port       |
-| SD Card            | SD 4.0                                     |
-| Smart Card         | Yes                                        |
-| Keyboard           | Backlit Keyboard                           |
-| Trackpad           | ALPS Touchpad                              |
+| Model              | ASUS Hackintosh                              |
+|:-------------------|:---------------------------------------------|
+| Motherboard        | ASUS ROG Maximus XI Hero (Z390, LGA1151)     |
+| Processor          | Intel Core i9-9900KF @ 3.6GHz 16MB cache     |
+| Processor Family   | Coffee Lake - 9th generetion - 14 nm - Q1'19 |
+| Graphics           | XFX Radeon RX 580 (AMD) - 8GB                |
+| Memory             | 64GB 3200MHz DDR4                            |
+| Cooler             | H60 Corsair Liquid Cooler                    |
+| Storage HD         | Seagate Barracuda 2 TB                       |
+| Storage SSD        | SSD Samsung EVO 860 500 MB                   |
+| Storage NVMe       | Western Digital Black SN850X 1 TB            |
+| Mouse              | Apple Magic Mouse 2                          |
+| Audio              | RealTek ALC3235 24-bits                      |
+| WLAN               |                                              |
+| Bluetooth          | Intel® Tri-Band Wireless-AC 18260 + BT 4.0   |
+| LAN                | Ethernet 10/100/1000 Mb/s (RJ-45)            |
+| Camera             | Logitech Webcam C920 HD Pro                  |
+| USB 3.1            | USB 3.0 x 2 ports, 1 PowerShare port         |
+| Keyboard           | Backlit Keyboard                             |
 
 To get more:
 
-- [Dell Latitude E7470](https://www.dell.com/support/manuals/fr-fr/latitude-e7470-ultrabook/late_e7470_om/caract%C3%A9ristiques?guid=guid-5a37743b-091b-4716-9574-f99f29e7bf1c&lang=en-us)
-- [Intel® Processor & Graphics](https://ark.intel.com/content/www/us/en/ark/products/88190/intel-core-i56300u-processor-3m-cache-up-to-3-00-ghz.html)
-- [Intel® Wierless](https://www.intel.com/content/www/us/en/products/sku/88822/intel-triband-wirelessac-18260/specifications.html)
+- [ASUS ROG Maximus XI Hero](https://rog.asus.com/motherboards/rog-maximus/rog-maximus-ix-hero-model/)
+- [Intel® Processor](https://ark.intel.com/content/www/us/en/ark/products/190887/intel-core-i99900kf-processor-16m-cache-up-to-5-00-ghz.html)
+- [IAMD Graphics](https://www.xfxforce.com/gpus/xfx-amd-radeon-tm-rx-580-gts-xxx-edition-8gb)
+
 </details>
 
 ## Status
