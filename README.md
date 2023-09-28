@@ -53,6 +53,8 @@ To get more:
 - [AMD Graphics](https://www.xfxforce.com/gpus/xfx-amd-radeon-tm-rx-580-gts-xxx-edition-8gb)
 - [TP-Link WiFi](https://www.tp-link.com/en/home-networking/pci-adapter/archer-t9e/#specifications)
 
+As the WiFi card is based on BCM4360 chipset, there is no need to add any kext: Ventura is running perfectly by default.
+
 </details>
 
 ## Status
@@ -83,6 +85,9 @@ To get more:
 </details>
 
 ## Current configuration
+
+Change on September 28th:
+- OpenCore: 0.9.5
 
 Up to date on September 26th, 2023.
 - macOS: Ventura 13.6
