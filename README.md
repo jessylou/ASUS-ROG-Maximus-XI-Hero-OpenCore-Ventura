@@ -50,7 +50,8 @@ To get more:
 
 - [ASUS ROG Maximus XI Hero](https://rog.asus.com/motherboards/rog-maximus/rog-maximus-ix-hero-model/)
 - [Intel® Processor](https://ark.intel.com/content/www/us/en/ark/products/190887/intel-core-i99900kf-processor-16m-cache-up-to-5-00-ghz.html)
-- [IAMD Graphics](https://www.xfxforce.com/gpus/xfx-amd-radeon-tm-rx-580-gts-xxx-edition-8gb)
+- [AMD Graphics](https://www.xfxforce.com/gpus/xfx-amd-radeon-tm-rx-580-gts-xxx-edition-8gb)
+- [TP-Link WiFi](https://www.tp-link.com/en/home-networking/pci-adapter/archer-t9e/#specifications)
 
 </details>
 
