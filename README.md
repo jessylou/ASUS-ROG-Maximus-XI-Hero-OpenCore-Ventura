@@ -86,12 +86,9 @@ As the WiFi card is based on BCM4360 chipset, there is no need to add any kext: 
 
 ## Current configuration
 
-Change on September 28th:
-- OpenCore: 0.9.5
-
-Up to date on September 26th, 2023.
-- macOS: Ventura 13.6
-- OpenCore: 0.9.4
+Change on November 12th, 2023:
+- macOS: Ventura 13.6.1
+- OpenCore: 0.9.6
 
 ## Installation
 
